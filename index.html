@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile Page</title>
+</head>
+<body>
+    <div class="flex-container">
+        <!-- Nav Bar -->
+        <div class="nav">
+            <h1>Profile</h1>
+            <ul>
+                <li>Home</li>
+                <li>My profile</li>
+                <li>Find Connections</li>
+            </ul>
+            <button>Sign Out</button>
+        </div>
+        <!-- body -->
+        <div class="body">
+            <!-- columna izquierda -->
+            <div class="column-1">
+                <div class="box-1">
+                    <div class="header">
+                        <img src="./images/20210104_222928.jpg" alt="">
+                    </div>
+                    <div class="box-body">
+                        <h1 class="name">Jane Doe</h1>
+                        <div class="location">
+                            <img class="icon" src="./icons/map-marker.png" alt="mar-marker icon">
+                            <h2>Costa Rica</h2>
+                        </div>
+                        <p>Developer | Engineer | Problem Solver <br>
+                        Master of shadows and the Internet!</p>
+                        <div class="edit">
+                            <img class="icon" src="./icons/gear.png" alt="user photo">
+                            <p id="edit" onclick="edit('.name')">Edit Profile</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <div class="header">
+                        <h2>Education</h2>
+                    </div>
+                    <div class="box-body">
+                        <h4>Coding Dojo - Full Stack Camp</h4>
+                        <p>Sep 2021 - Dec 2021</p>
+                        <p>Triple black belt in Python, MERN, and Java...</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <!-- columna derecha -->
+            <div class="column-2">
+                <div class="box-1">
+                    <div class="header">
+                        <h3 class="number">2</h3>
+                        <h2>Connection Requests</h2>
+                    </div>
+                    <div class="profile">
+                        <img src="./images/todd-s.jpg" alt="">
+                        <h4>Todd E</h4>
+                        <img src="./icons/accept-circle.png" alt=""onclick="erase2('.profile','.number','.add')">
+                        <img src="./icons/close-circle.png" alt=""onclick="erase('.profile','.number')">
+                    </div>
+                    <div class="profile">
+                        <img src="./images/phil-s.jpg" alt="">
+                        <h4>Phil K</h4>
+                        <img src="./icons/accept-circle.png" alt=""onclick="erase2('.profile','.number','.add')">
+                        <img src="./icons/close-circle.png" alt=""onclick="erase('.profile','.number')">
+                    </div>
+                </div>
+                <div class="box-2">
+                    <div class="header">
+                        <h3 class="add">500</h3>
+                        <h2>Your Connections</h2>
+                    </div>
+                    <div class="profile">
+                        <img src="./images/adrien-s.jpg" alt="">
+                        <h4>Adrien D</h4>
+                    </div>
+                    <div class="profile">
+                        <img src="./images/anne-s.jpg" alt="">
+                        <h4>Anne J</h4>   
+                    </div>
+                    <div class="profile">
+                        <img src="./images/alayne-s.jpg" alt="">
+                        <h4>Alayne T</h4>   
+                    </div>
+                    <div class="profile">
+                        <img src="./images/arry-s.jpg" alt="">
+                        <h4>Arry T</h4>   
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
